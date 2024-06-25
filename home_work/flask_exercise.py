@@ -63,9 +63,13 @@ def add_book():
     return render_template('add_book.html')
 
 
+
+
+
 @app.route('/list')
 def list_books():
-    return render_template('list_books.html', books=library.books)
+    books = library.books
+    return render_template('list_books.html', books=books)
 
 
 @app.route('/edit/<int:index>', methods=['GET', 'POST'])
