@@ -4,5 +4,6 @@ from home_work.flask_exercise import app
 def main():
     app.run(debug=True)
 
+
 if __name__ == '__main__':
     main()
